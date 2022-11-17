@@ -11,6 +11,12 @@ class Calculator {
     };
 
     divide = (x, y) => {
+        if (y === 0) {
+            return('Enter non-zero number');
+        }
+        if (x === 0 && y === 0) {
+            return('Invalid! Enter non-zero numbers');
+        }
         return x / y;
     };
 
