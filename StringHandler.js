@@ -25,3 +25,5 @@ class StringHandler {
         return newString;
     }
 }
+
+module.exports = StringHandler;
