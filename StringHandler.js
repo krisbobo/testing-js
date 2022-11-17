@@ -11,4 +11,8 @@ class StringHandler {
         const error = new Error('Invalid string');
         throw error;
     };
+
+    reverseString = (string) => {
+        return string.split('').reverse().join('');
+    };
 }
