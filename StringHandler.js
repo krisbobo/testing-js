@@ -15,4 +15,13 @@ class StringHandler {
     reverseString = (string) => {
         return string.split('').reverse().join('');
     };
+
+    stringCapitalize = (string) => {
+        if (typeof string === 'number') {
+            throw new Error('Enter a string, not a number!');
+        }
+        const capitalizeFirstLetter = string.charAt(0).toUpperCase();
+        const newString = capitalizeFirstLetter + string.slice(1);
+        return newString;
+    }
 }
